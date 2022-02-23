@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.header__box{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header__isotipo{
+    display: flex;
+    align-items: center;
+}
+
+.header__isotipo-img{
+    height: 70px;
+    width: 70px;
+}
+
+.header__main{
+    height: 70px;
+    width: 70px;
+}
+
+.header__main-mobile{
+    display: none;
+}
+
+.header__main-mobile-burguer-img{
+    height: 70px;
+    width: 70px;
+}
+
+.header__main-desktop{
+    display: none;
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.home{
+    background-image: url("/images/img-home.jpg");
+    min-height: 600px;    
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.welcome__title{
+    color: #fff;
+    font-size: 5rem;
+}
+
+.welcome__subtitle{
+    color: #fff;
+    font-size: 2rem;
+}

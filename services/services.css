@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.services__box{
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    padding: 10px;
+}
+
+.services__title{
+    text-align: center;
+    margin: 70px auto;
+    font-size: 3rem;
+}
+
+.services__container{
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.services__container-img{
+    max-width: 150px;
+}
+
+.services__container-title{
+    font-size: 2rem;
+}
+
+.services__container-description{
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* CONTACT PAGE */
+
+.home__contact{
+    background-color: #141414;
+}
+
+.footer__contact{
+    background-color: #2c2c2c;
+}
