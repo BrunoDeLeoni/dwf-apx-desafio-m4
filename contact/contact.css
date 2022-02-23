@@ -2,6 +2,84 @@
     box-sizing: border-box;
     margin: 0px;
 }
+.form,
+.form__contact{
+    background: #141414;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__box{
+    display: grid;
+}
+
+.contact__title{
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center;
+}
+
+/* FORM */
+
+.contact__form{
+    min-width: 320px;
+    max-width: 500px;
+    display: grid;
+    gap: 5px;
+}
+
+.contact__fielset{
+    display: grid;
+    padding: 10px;
+    gap: 5px;
+}
+
+.contact__label{
+    display: block;
+    color: white;
+}
+
+.contact__input-name,
+.contact__input-email,
+.contact__input-textarea{
+    font-size: 13px;
+    border: none;
+    display: block;
+    width: 100%;
+    border-radius: 1px;
+    padding: 5px;
+}
+
+.contact__input-textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 300px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+/* BUTTON */
+
+.contact__button-send{
+    padding: 10px;
+}
+
+.contact__button{
+    font-size: 10px;
+    background-color: #2C2C2C;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
 
 /* CONTACT PAGE */
 
