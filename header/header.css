@@ -11,6 +11,8 @@
     padding: 10px;
 }
 
+/* ISOTIPO */
+
 .header__isotipo{
     display: flex;
     align-items: center;
@@ -20,6 +22,8 @@
     height: 70px;
     width: 70px;
 }
+
+/* MAIN */
 
 .header__main{
     height: 70px;

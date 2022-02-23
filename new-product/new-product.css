@@ -15,9 +15,7 @@
     justify-content: center;
 }
 
-.new-product__img{
-    display: none;
-}
+/* NEW PRODUCT CONTAINER */
 
 .new-product__container{
     display: flex;
@@ -36,4 +34,8 @@
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+.new-product__img{
+    display: none;
 }

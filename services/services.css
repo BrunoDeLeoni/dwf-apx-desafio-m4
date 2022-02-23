@@ -10,6 +10,8 @@
     padding: 10px;
 }
 
+/* TITLE */
+
 .services__title{
     text-align: center;
     margin: 70px auto;
@@ -24,6 +26,8 @@
     gap: 5px;
 }
 
+/* SERVICE CONTAINER */
+
 .services__container-img{
     max-width: 150px;
 }
@@ -35,4 +39,13 @@
 .services__container-description{
     padding: 10px;
     text-align: center;
+}
+
+
+/* SERVICE PAGE */
+
+.header__services,
+.services__services{
+    background-color: #141414;
+    color: #fff;
 }
