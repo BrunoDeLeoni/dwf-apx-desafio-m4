@@ -30,15 +30,35 @@
     width: 70px;
 }
 
+/* MAIN MOBILE */
+
 .header__main-mobile{
     display: none;
 }
+@media (min-width: 769px) {
+    .header__main-mobile{
+        display: none;
+    }
+}
 
-.header__main-mobile-burguer-img{
+.header__main-mobile-img{
     height: 70px;
     width: 70px;
 }
+@media (min-width: 769px) {
+    .header__main-mobile-img{
+        display: none;
+    }
+}
+
+/* MAIN DESKTOP */
 
 .header__main-desktop{
     display: none;
+}
+
+/* PORTFOLIO PAGE */
+
+.header__portfolio{
+    background-color: #141414;
 }

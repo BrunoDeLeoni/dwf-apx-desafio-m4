@@ -9,17 +9,13 @@ const headerComponent = (headerEl) => {
             <!-- MAIN -->
             <div class="main">
                 <!-- MAIN MOBILE -->
-                <img class="header__main-mobile-burguer-img" src="/images/img-main-burguer.png">
-                <ul class="header__main-mobile">
-                    <div class="header__main-mobile-burguer">
-                        <li class="header__main-mobile-item">Portfolio</li>
-                        <li class="header__main-mobile-item">Services</li>
-                        <li class="header__main-mobile-item">Contact</li>
-                    </div>
-                </ul>
+                <img class="header__main-mobile-img" src="/images/img-main-burguer.png">
+                <div class="header__main-mobile"></div>
                 <!-- MAIN DESKTOP -->
                 <div class="header__main-desktop">
-                
+                    <a class="header__main-desktop-item" href="/services.html">Services</a>
+                    <a class="header__main-desktop-item" href="/portfolio.html">Portfolio</a>
+                    <a class="header__main-desktop-item" href="/contact.html">Contact</a>
                 </div>
             </div>
         </div>

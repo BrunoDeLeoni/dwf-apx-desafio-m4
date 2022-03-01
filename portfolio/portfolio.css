@@ -24,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    padding: 10px;
 }
 
 /* SERVICE CONTAINER */
@@ -39,12 +40,11 @@
 }
 
 .portfolio__container-description{
-    padding: 10px;
     text-align: center;
 }
 
 .portfolio__container-link{
-
+    font-size: 20px;
 }
 
 /* PORTFOLIO PAGE */
