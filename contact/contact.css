@@ -5,8 +5,7 @@
 
 /* CONTACT */
 
-.form,
-.form__contact{
+.form{
     background: #141414;
     height: 100vh;
     display: flex;
@@ -16,6 +15,12 @@
 
 .contact__box{
     display: grid;
+}
+@media (min-width: 769px){
+    .contact__box{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .contact__title{
@@ -88,4 +93,17 @@
 
 .home__contact{
     background-color: #141414;
+}
+@media (min-width: 769px){
+    .home__contact{
+        background: linear-gradient(107.17deg, #408195 29.35%, rgba(0, 210, 135, 0.8) 78.73%);
+    }
+}
+
+.form__contact{
+    background: initial;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

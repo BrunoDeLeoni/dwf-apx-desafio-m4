@@ -4,19 +4,23 @@ const servicesComponent = (servicesEl) => {
     `
         <!-- BOX -->
         <div class="services__box">
-        <!-- TITLE -->
-        <h2 class="services__title">My Services</h2>
-            <template class="services__template">
-                <!-- SERVICES -->
-                <div class="services__container">
-                    <!-- IMAGE -->
-                    <img src="/images/img-services.png" class="services__container-img">
-                    <!-- TITLE -->
-                    <h4 class="services__container-title">Service</h4>
-                    <!-- DESCRIPTION -->
-                    <p class="services__container-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati ea libero voluptatum quisquam vitae aspernatur sed praesentium, nemo, eligendi et officiis saepe nisi. Consequatur laborum qui magni id deserunt!</p>
-                </div>
-            </template>
+            <!-- TITLE -->
+            <div class="services__title-box">
+                <h2 class="services__title">My Services</h2>
+            </div>
+            <div class="services__container-items">
+                <template class="services__template">
+                    <!-- SERVICES -->
+                    <div class="services__container">
+                        <!-- IMAGE -->
+                        <img src="/images/img-services.png" class="services__container-img">
+                        <!-- TITLE -->
+                        <h4 class="services__container-title">Service</h4>
+                        <!-- DESCRIPTION -->
+                        <p class="services__container-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati ea libero voluptatum quisquam vitae aspernatur sed praesentium, nemo, eligendi et officiis saepe nisi. Consequatur laborum qui magni id deserunt!</p>
+                    </div>
+                </template>
+            </div>
         </div>
     `
     servicesEl.appendChild(divEl);
@@ -25,8 +29,7 @@ const servicesComponent = (servicesEl) => {
 function addServices(params){
 
     const template = document.querySelector(".services__template");
-    const container = document.querySelector(".services__box");
-    
+    const container = document.querySelector(".services__container-items");
     
     template.content.querySelector(".services__container-title").textContent = params.titleService;
     template.content.querySelector(".services__container-description").textContent = params.descriptionService;

@@ -4,21 +4,25 @@ const portfolioComponent = (portfolioEl) => {
     `
         <!-- BOX -->
         <div class="portfolio__box">
-        <!-- TITLE -->
-        <h2 class="portfolio__title">My Portfolio</h2>
-            <template class="portfolio__template">
-                <!-- WORKS -->
-                <div class="portfolio__container">
-                    <!-- IMAGE -->
-                    <img src="/images/img-services.png" class="portfolio__container-img">
-                    <!-- TITLE -->
-                    <h4 class="portfolio__container-title">Work</h4>
-                    <!-- DESCRIPTION -->
-                    <p class="portfolio__container-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati ea libero voluptatum quisquam vitae aspernatur sed praesentium, nemo, eligendi et officiis saepe nisi. Consequatur laborum qui magni id deserunt!</p>
-                    <!-- LINK -->
-                    <a class="portfolio__container-link" href="http://www.google.com.ar">Ver mas...</a>
-                    </div>
-            </template>
+            <!-- TITLE -->
+            <div class="portfolio__title-box">
+                <h2 class="portfolio__title">My Portfolio</h2>
+            </div>
+            <div class="portfolio__container-items">    
+                <template class="portfolio__template">
+                    <!-- WORKS -->
+                    <div class="portfolio__container">
+                        <!-- IMAGE -->
+                        <img src="/images/img-services.png" class="portfolio__container-img">
+                        <!-- TITLE -->
+                        <h4 class="portfolio__container-title">Work</h4>
+                        <!-- DESCRIPTION -->
+                        <p class="portfolio__container-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati ea libero voluptatum quisquam vitae aspernatur sed praesentium, nemo, eligendi et officiis saepe nisi. Consequatur laborum qui magni id deserunt!</p>
+                        <!-- LINK -->
+                        <a class="portfolio__container-link" href="http://www.google.com.ar">Ver mas...</a>
+                        </div>
+                </template>
+            </div>
         </div>
     `
     portfolioEl.appendChild(divEl);
@@ -27,7 +31,7 @@ const portfolioComponent = (portfolioEl) => {
 function addPortfolio(params){
 
     const template = document.querySelector(".portfolio__template");
-    const container = document.querySelector(".portfolio__box");
+    const container = document.querySelector(".portfolio__container-items");
     
     template.content.querySelector(".portfolio__container-img").src = params.photoPortfolio;
     template.content.querySelector(".portfolio__container-title").textContent = params.titlePortfolio;

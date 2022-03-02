@@ -8,21 +8,59 @@
     flex-direction: column;
     align-items: center;
     min-height: 600px;
-    padding: 10px;
+}
+@media (min-width: 769px){
+    .services__box{
+        align-items: stretch;
+    }
 }
 
 /* TITLE */
+
+.services__title-box{
+}
+@media (min-width: 769px){
+    .services__title-box{
+        display: flex;
+        min-height: 500px;
+        justify-content: start;
+    }
+}
 
 .services__title{
     text-align: center;
     margin: 70px auto;
     font-size: 3rem;
 }
+@media (min-width: 769px){
+    .services__title{
+        text-align: start;
+        margin: auto 50px;
+    }
+}
+
+/* SERVICE ITEM */
+
+.services__container-items{
+}
+@media (min-width: 769px){
+    .services__container-items{
+        background-color: #141414;
+        display: grid;
+        justify-content: center;
+        grid-template-columns:repeat(2, 350px);
+    }
+}
+@media (min-width: 1024px){
+    .services__container-items{
+        grid-template-columns:repeat(3, 350px);
+    }
+}
 
 .services__container{
     max-width: 350px;
-    max-height: 500px;
-    margin:15px;
+    min-height: 450px;
+    margin:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,11 +71,13 @@
 /* SERVICE CONTAINER */
 
 .services__container-img{
-    max-width: 150px;
+    max-height: 150px;
 }
 
 .services__container-title{
     font-size: 2rem;
+    max-height: 150px;
+    text-align: center;
 }
 
 .services__container-description{
@@ -46,8 +86,12 @@
 
 /* SERVICE PAGE */
 
-.header__services,
-.services__services{
+.home__services{
     background-color: #141414;
     color: #fff;
+}
+@media (min-width: 769px){
+    .home__services{
+        background: linear-gradient(107.17deg, #958C40 29.35%, rgba(156, 0, 210, 0.8) 78.73%);
+    }
 }

@@ -6,7 +6,7 @@ const newProductComponent = (newProductEl) => {
         <div class="new-product__box">
             <template class="new-product__template">            
                 <!-- IMAGE -->
-                <img class="new-product__img" src="/images/img-new-product.png">
+                <img class="new-product__img" src="./images/img-new-product.png">
                 <!-- SIN IMAGE -->
                 <div class="new-product__container">
                     <!-- TITLE -->
@@ -35,7 +35,7 @@ function addNewProduct(params){
 }
 
 function getNewProduct(){
-    return fetch("https://preview.contentful.com/spaces/ccfsme2o764k/environments/master/entries?access_token=Au3n8HFpCZMuChg5XtRgZn1oWD6UqXAeYO4H5iTXYog&content_type=tddyNewProduct")        
+    return fetch("https://preview.contentful.com/spaces/ccfsme2o764k/environments/master/entries?access_token=Au3n8HFpCZMuChg5XtRgZn1oWD6UqXAeYO4H5iTXYog&content_type=tddyNewProduct")
     .then((r) => {
         return r.json();
     })
