@@ -23,10 +23,7 @@
     width: 70px;
 }
 
-/* MAIN MOBILE */
-
-
-/* BUTTON */
+/* BUTTON OPEN */
 
 .header__main-mobile-button{
     height: 80px;
@@ -38,7 +35,7 @@
     }
 }
 
-/* MAIN DESKTOP */
+/* MAIN MOBILE */
 
 .header__main-mobile{
     background-color: #000;
@@ -57,14 +54,21 @@
     }
 }
 
+/* BUTTON CLOSE */
+
 .header__main-mobile-container-close{
     text-align: end;
     padding: 20px;
 }
 
 .header__main-mobile-button-close{
+    background-color: #000;
+    font-size: 20px;
+    color: #b1b1b1;
+    border: none;
 }
 
+/* CONTAINER MAIN */
 
 .header__main-mobile-container{
     height: 80%;
@@ -74,11 +78,9 @@
     justify-content: space-evenly;
 }
 
-
 .header__main-mobile-item{
     font-size: 2rem;
 }
-
 
 /* MAIN DESKTOP */
 

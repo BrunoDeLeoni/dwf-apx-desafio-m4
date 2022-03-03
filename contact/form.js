@@ -28,4 +28,36 @@ const formComponent = (formEl) => {
     
     `
     formEl.appendChild(divEl);
+
+    function sendForm() {
+        const form  = document.querySelector(".contact__form");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let data = new FormData(form);
+            let name = data.get("name");
+            let email = data.get("email");
+            let message = data.get("message");
+
+            console.log(name, email, message);
+        
+            fetch("https://apx-api.vercel.app/api/utils/dwf", {
+                method: "POST",
+                headers: { "content-type": "application/json" },
+                body: JSON.stringify({
+                    to: "brunobarbaradeleoni@gmail.com",
+                    message: {
+                        Nombre: name,
+                        Email: email,
+                        Mensaje: message,
+                    },
+                }),
+            })
+            .then(r => r.json())
+            .catch(e => console.error('Error:', e))
+            .then(r => console.log('Success:', r));
+        });
+    };
+
+    sendForm();
+
 };
