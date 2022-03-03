@@ -13,7 +13,7 @@ const portfolioComponent = (portfolioEl) => {
                     <!-- WORKS -->
                     <div class="portfolio__container">
                         <!-- IMAGE -->
-                        <img src="/images/img-services.png" class="portfolio__container-img">
+                        <img src="./images/img-services.png" class="portfolio__container-img">
                         <!-- TITLE -->
                         <h4 class="portfolio__container-title">Work</h4>
                         <!-- DESCRIPTION -->

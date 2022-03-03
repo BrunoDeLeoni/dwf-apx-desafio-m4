@@ -37,17 +37,11 @@ const formComponent = (formEl) => {
             const name = document.querySelector("#name").value;
             const email = document.querySelector("#email").value;
             const message = document.querySelector("#message").value;
-            
-            console.log(name, email, message);
-            
+                        
             const data = {
                 to: "brunobarbaradeleoni@gmail.com",
-                message: {
-                    Nombre: name,
-                    Email: email,
-                    Mensaje: message,
-                },
-            }
+                message: `Mensaje de ${name}. Email: ${email}. El mensaje es ${message}`,
+            };
         
             fetch("https://apx-api.vercel.app/api/utils/dwf", {
                 method: "POST",

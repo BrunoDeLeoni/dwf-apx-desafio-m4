@@ -13,7 +13,7 @@ const servicesComponent = (servicesEl) => {
                     <!-- SERVICES -->
                     <div class="services__container">
                         <!-- IMAGE -->
-                        <img src="/images/img-services.png" class="services__container-img">
+                        <img src="./images/img-services.png" class="services__container-img">
                         <!-- TITLE -->
                         <h4 class="services__container-title">Service</h4>
                         <!-- DESCRIPTION -->

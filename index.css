@@ -8,7 +8,7 @@ body{
 }
 
 .home{
-    background-image: url("/images/img-home.jpg");
+    background-image: url("./images/img-home.jpg");
     min-height: 600px;    
 }
 
