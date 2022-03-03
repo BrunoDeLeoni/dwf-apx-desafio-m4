@@ -6,7 +6,7 @@ const formComponent = (formEl) => {
         <div class="contact__box">
             <h2 class="contact__title">Contact</h2>
             <!-- FORM -->
-            <div class="contact__form">
+            <form class="contact__form" method="POST">
                 <div class="contact__fielset">
                     <label for="name" class="contact__label">Name</label>
                     <input type="text" id="name" class="contact__input-name">
@@ -23,41 +23,43 @@ const formComponent = (formEl) => {
                 <div class="contact__button-send">
                     <button class="contact__button">Send</button>
                 </div>
-            </div>
+            </form>
         </div>
     
     `
     formEl.appendChild(divEl);
 
     function sendForm() {
-        const form  = document.querySelector(".contact__form");
+        const form = document.querySelector(".contact__form");
         form.addEventListener("submit", (e) => {
             e.preventDefault();
-            let data = new FormData(form);
-            let name = data.get("name");
-            let email = data.get("email");
-            let message = data.get("message");
 
+            const name = document.querySelector("#name").value;
+            const email = document.querySelector("#email").value;
+            const message = document.querySelector("#message").value;
+            
             console.log(name, email, message);
+            
+            const data = {
+                to: "brunobarbaradeleoni@gmail.com",
+                message: {
+                    Nombre: name,
+                    Email: email,
+                    Mensaje: message,
+                },
+            }
         
             fetch("https://apx-api.vercel.app/api/utils/dwf", {
                 method: "POST",
                 headers: { "content-type": "application/json" },
-                body: JSON.stringify({
-                    to: "brunobarbaradeleoni@gmail.com",
-                    message: {
-                        Nombre: name,
-                        Email: email,
-                        Mensaje: message,
-                    },
-                }),
+                body: JSON.stringify(data),
             })
-            .then(r => r.json())
-            .catch(e => console.error('Error:', e))
-            .then(r => console.log('Success:', r));
+            .then((r) => r.json()) 
+            .catch((error) => console.error("Err!", error)) 
+            .then(() => { console.log("Send OK")});
+
         });
     };
-
     sendForm();
 
 };
