@@ -46,7 +46,7 @@
 
 .footer__logo-label{
     text-align: center;
-    
+    font-size: 19px;
 }
 
 /* LINK */
@@ -72,6 +72,9 @@
 }
 
 .footer__link-web{
-    padding: 5px;
-
+    text-decoration: none;
+    color: #000;
+    align-self: center;
+    font-size: 19px;
 }
+

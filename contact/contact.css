@@ -3,6 +3,12 @@
     margin: 0px;
 }
 
+/* HEADER */
+
+.header__box{
+    background-color: initial;
+}
+
 /* CONTACT */
 
 .form{
@@ -22,6 +28,8 @@
         flex-direction: row;
     }
 }
+
+/* TITLE */
 
 .contact__title{
     color: white;

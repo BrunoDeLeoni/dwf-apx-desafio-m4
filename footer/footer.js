@@ -12,16 +12,16 @@ const footerComponent = (footerEl) => {
             <!-- LINK -->
             <div class="footer__link">
                 <div class="footer__link-box">
-                    <img class="footer__link-img" src="./images/img-footer-instagram.png" alt="instagram">
                     <a id="instagram" class="footer__link-web" href="http://instagram.com/tddy.visiontecnologica/">Instagram</a>
+                    <img class="footer__link-img" src="./images/img-footer-instagram.png" alt="instagram">
                 </div>
                 <div class="footer__link-box">
-                    <img class="footer__link-img" id="linkedin" src="./images/img-footer-linkedin.png" alt="linkedin">
                     <a id="linkedin" class="footer__link-web" href="http://linkedin.com/">Linkedin</a>
+                    <img class="footer__link-img" id="linkedin" src="./images/img-footer-linkedin.png" alt="linkedin">
                 </div>
                 <div class="footer__link-box">
-                    <img class="footer__link-img" src="./images/img-footer-github.png" alt="github">
                     <a id="github" class="footer__link-web" href="http://github.com/">GitHub</a>
+                    <img class="footer__link-img" src="./images/img-footer-github.png" alt="github">
                 </div>
             </div>
         </div>

@@ -3,8 +3,13 @@
     box-sizing: border-box;
 }
 
+.header__box{
+    background-color: hsl(0deg 0% 0% / 50%);
+}
+
 body{
     font-family: 'Poppins', sans-serif;
+    font-weight: 100;
 }
 
 .home{
@@ -24,11 +29,14 @@ body{
 .welcome__title{
     color: #fff;
     font-size: 5rem;
+    text-shadow: black 0.1em 0.1em 0.1em
 }
 
 .welcome__subtitle{
     color: #fff;
     font-size: 2rem;
+    font-weight: 100;
+    text-shadow: black 0.1em 0.1em 0.1em
 }
 
 /* SERVICES */

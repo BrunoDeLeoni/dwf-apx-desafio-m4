@@ -15,6 +15,12 @@
     }
 }
 
+/* HEADER */
+
+.header__box{
+    background-color: initial;
+}
+
 /* TITLE */
 
 .portfolio__title-box{
@@ -86,7 +92,8 @@
 }
 
 .portfolio__container-link{
-    font-size: 20px;
+    text-decoration: none;
+    color: #fafafa;
 }
 
 /* PORTFOLIO PAGE */

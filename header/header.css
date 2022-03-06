@@ -4,6 +4,7 @@
 }
 
 .header__box{
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -38,7 +39,7 @@
 /* MAIN MOBILE */
 
 .header__main-mobile{
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.950);
     padding: 10px;
     display: none;
     flex-direction: column;
@@ -79,8 +80,19 @@
 }
 
 .header__main-mobile-item{
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
 }
+.header__main-mobile-item:hover{
+    color: #000;
+    transition: all 0.5s ease-in-out;
+    background-color: hsla(0, 0%, 100%, 0.7);
+}
+
 
 /* MAIN DESKTOP */
 
@@ -91,6 +103,21 @@
     .header__main-desktop{
         display: flex;
         font-size: 25px;
-        gap: 20px;
+        gap: 30px;
     }
 }
+
+.header__main-desktop-item{
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header__main-desktop-item:hover {
+    color: #000;
+    transition: all 0.5s ease-in-out;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
