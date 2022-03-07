@@ -115,3 +115,9 @@
     justify-content: center;
     align-items: center;
 }
+
+/* SWAL "Mensaje Enviado" */
+
+.swal-overlay{
+    background-color: rgba(0, 255, 200, 0.5)
+}

@@ -50,9 +50,20 @@ const formComponent = (formEl) => {
             })
             .then((r) => r.json()) 
             .catch((error) => console.error("Err!", error)) 
-            .then(() => { console.log("Send OK")});
+            .then(() => { console.log("Mensaje enviado") })
+            .then(() => { 
+                swal({
+                    icon: "success",
+                    text: "Mensaje Enviado",
+                    timer: 2000,
+                    button: false,
+                    })
+                })
+
+            form.reset();
 
         });
+
     };
     sendForm();
 

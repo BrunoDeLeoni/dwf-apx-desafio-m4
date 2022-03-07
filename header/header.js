@@ -4,28 +4,27 @@ const headerComponent = (headerEl) => {
     `
         <!-- BOX -->        
         <div class="header__box">
-            <!-- ISOTIPO -->
-            <a class="header__isotipo" href="./index.html"><img class="header__isotipo-img" src="./images/img-isotipo.png"></a>
-            <!-- MAIN -->
-            <div class="main">
-                <!-- MAIN MOBILE -->
-                <img class="header__main-mobile-button" src="./images/img-main-burguer.png">
-                <div class="header__main-mobile">
-                    <div class="header__main-mobile-container-close">
-                        <button class="header__main-mobile-button-close">X</button>
-                    </div>
-                    <div class="header__main-mobile-container">
-                        <a class="header__main-mobile-item" href="./services.html">Services</a>
-                        <a class="header__main-mobile-item" href="./portfolio.html">Portfolio</a>
-                        <a class="header__main-mobile-item" href="./contact.html">Contact</a>
-                    </div>
+        <!-- ISOTIPO -->
+        <a class="header__isotipo" href="./index.html"><img class="header__isotipo-img" src="./images/img-isotipo.png"></a>
+        <!-- MAIN -->
+        <div class="main">
+        <!-- MAIN MOBILE -->
+            <img class="header__main-mobile-button" src="./images/img-main-burguer.png">
+            <div class="header__main-mobile">
+                <div class="header__main-mobile-container-close">
+                    <button class="header__main-mobile-button-close">X</button>
                 </div>
-                <!-- MAIN DESKTOP -->
-                <div class="header__main-desktop">
-                    <a class="header__main-desktop-item" href="./services.html">Services</a>
-                    <a class="header__main-desktop-item" href="./portfolio.html">Portfolio</a>
-                    <a class="header__main-desktop-item" href="./contact.html">Contact</a>
+                <div class="header__main-mobile-container">
+                    <a class="header__main-mobile-item" href="./services.html">Services</a>
+                    <a class="header__main-mobile-item" href="./portfolio.html">Portfolio</a>
+                    <a class="header__main-mobile-item" href="./contact.html">Contact</a>
                 </div>
+            </div>
+        <!-- MAIN DESKTOP -->
+            <div class="header__main-desktop">
+                <a class="header__main-desktop-item" href="./services.html">Services</a>
+                <a class="header__main-desktop-item" href="./portfolio.html">Portfolio</a>
+                <a class="header__main-desktop-item" href="./contact.html">Contact</a>
             </div>
         </div>
     `
@@ -38,9 +37,10 @@ const headerComponent = (headerEl) => {
         const mainEl = document.querySelector(".header__main-mobile");
     
         openMainEl.addEventListener("click", () => {
-            mainEl.style.display = "flex";
+            mainEl.style.display = "flex"
+            mainEl.style.position = "fixed";
         })
-    
+        
         closeMainEl.addEventListener("click", () => {
             mainEl.style.display = "none";
         })

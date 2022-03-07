@@ -29,14 +29,14 @@ body{
 .welcome__title{
     color: #fff;
     font-size: 5rem;
-    text-shadow: black 0.1em 0.1em 0.1em
+    text-shadow: black 0.1em 0.1em 0.1em;
 }
 
 .welcome__subtitle{
     color: #fff;
     font-size: 2rem;
     font-weight: 100;
-    text-shadow: black 0.1em 0.1em 0.1em
+    text-shadow: black 0.1em 0.1em 0.1em;
 }
 
 /* SERVICES */
